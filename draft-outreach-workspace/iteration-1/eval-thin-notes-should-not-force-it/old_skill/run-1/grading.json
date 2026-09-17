@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Output is SKIP with a one-line reason, not a forced generic opener",
+      "passed": true,
+      "evidence": "Starts 'SKIP \u2014 nothing here clears the bar.'"
+    },
+    {
+      "text": "Reason correctly identifies no signal clears the personalization bar",
+      "passed": true,
+      "evidence": "Same reasoning shape \u2014 vague discipline claim, no recent hook, thin site, no shared context."
+    },
+    {
+      "text": "Does not send a generic line like 'curious how AI fits into your workflow'",
+      "passed": true,
+      "evidence": "Pure SKIP, no drafted line."
+    }
+  ],
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Opener references the AI-tool-positioning or case-study-numbers signal, not a generic team-size detail", "passed": true, "evidence": "Anchors on both the AI-driven claim and the case-study stats."},
+    {"text": "The drafted reasoning identifies pain point #3 (no ROI proof) as the match, not #5", "passed": false, "evidence": "No pain-point number used; reasoning references 'Atrily's core value prop' generically without naming a specific researched pain point."},
+    {"text": "Opener ends in an open question rather than a pitch statement", "passed": true, "evidence": "Ends in 'Is that the one piece that hasn't gone AI-native yet, or is there something behind the scenes I'm just not seeing?'"},
+    {"text": "Register is lowercase/casual, consistent with references/voice.md", "passed": false, "evidence": "Capitalized sentence-case throughout ('Your about page says...', 'Then I check the case studies...'), three separate sentences/paragraphs — more formal than voice.md's lowercase, short-line samples."}
+  ],
+  "summary": {"passed": 2, "failed": 2, "total": 4, "pass_rate": 0.5}
+}

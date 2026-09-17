@@ -1,0 +1,12 @@
+{
+  "eval_id": 0,
+  "eval_name": "fragmented-systems-multi-signal",
+  "prompt": "Draft a cold LinkedIn opener for Priya Raman (22-person full-service agency, disciplines siloed, 'one roof' About line, contact form + Calendly + no live chat) using the draft-outreach synthesis process.",
+  "assertions": [
+    "Opener references a specific detail from RAW_NOTES, not a generic agency description",
+    "Opener asks exactly one open question and is not a value-prop pitch",
+    "The drafted reasoning identifies pain point #5 (fragmented systems) as the match",
+    "Opener draws on a single strongest signal rather than combining multiple RAW_NOTES details into one message",
+    "Register is lowercase/casual, consistent with references/voice.md"
+  ]
+}

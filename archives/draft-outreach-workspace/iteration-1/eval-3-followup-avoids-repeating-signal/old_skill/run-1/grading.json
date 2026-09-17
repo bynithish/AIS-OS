@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Follow-up uses a different signal than LAST_SENT (ideally the newsletter/pain-#5 signal), not a repeat of the squeeze-play question", "passed": true, "evidence": "Picks the newsletter signal, noting the opener already used the enterprise-client angle."},
+    {"text": "Follow-up does not restate or closely paraphrase LAST_SENT's question", "passed": true, "evidence": "New question is about the newsletter, distinct from the retainer question already sent."},
+    {"text": "Follow-up reads as a light nudge continuing the thread rather than a fresh cold-open", "passed": true, "evidence": "Opens with 'Following up on this, no pressure either way.'"},
+    {"text": "Follow-up still ends in one open question, in voice", "passed": false, "evidence": "Capitalized sentence-case ('Following up on this, no pressure either way.' / 'Noticed your newsletter...') rather than voice.md's lowercase register; the closing either/or question also asserts an assumption ('gets squeezed whenever client work picks up') as likely fact rather than staying purely observational."}
+  ],
+  "summary": {"passed": 3, "failed": 1, "total": 4, "pass_rate": 0.75}
+}

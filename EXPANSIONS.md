@@ -14,6 +14,7 @@ The AIOS structure should look like a small, well-run business. Not a hoarder's 
 | `references/` | Frameworks, voice samples, API guides, SOPs as you build them. |
 | `decisions/log.md` | Append-only record of what was decided and why. |
 | `brainstorms/` | Saved `/grill-me` interviews; created on first use. Confirmed context is linked back to its capture. |
+| `raw/` | Immutable source material (call transcripts, clipped articles, prospect notes) worth keeping verbatim. Gitignored — read from it, never edit it, never file interpreted facts here. |
 | `archives/` | Old files. Don't delete — move here. |
 | `connections.md` | Registry of every system your AIOS can reach. |
 | `.claude/skills/` | Your skills: `/onboard`, `/audit`, `/level-up`, `/link`, `/grill-me`, `/3d-brain`. Add more only when they solve a real need. |
@@ -34,6 +35,7 @@ The AIOS structure should look like a small, well-run business. Not a hoarder's 
 | `scripts/` | You write Python or Bash to hit APIs not covered by MCPs | Most people's second connection is a script, not an MCP |
 | `.claude/agents/` | You need a sub-assistant for repeatable, multi-step research/writing | Agents run on cheaper models in their own context — keep your main session lean |
 | Sub-OS folders (e.g. `youtube-os/`) | You have a vertical with its own data, sheets, transcripts, scripts | Isolation pattern — vertical workflows get their own scoped operating manual + skills |
+| `index.md` | `context/` + `references/` pass ~15-20 pages, or you can't recall what's in them from memory | Content catalog with one-line summaries per page, faster than skimming folders once the wiki has grown |
 
 ---
 
@@ -47,6 +49,7 @@ When each surface gets routinely touched:
 - `connections.md` — every time a new tool gets wired in, add a row
 - `references/{tool}-api.md` — same time as `connections.md` update; capture the API once
 - `CLAUDE.md` — quarterly review; rewrite the persona/priorities section after `/level-up` Q90
+- Wiki lint (contradictions, orphan pages, stale claims across `context/`/`references/`) — fold into `/audit` runs
 
 ---
 
@@ -54,7 +57,7 @@ When each surface gets routinely touched:
 
 Anti-patterns. These look helpful but rot the structure:
 
-- **Don't dump raw email/Slack archives into `references/`.** The wiki is not a doc dump. Interpreted facts only.
+- **Don't dump raw email/Slack archives into `references/`.** The wiki is not a doc dump. Interpreted facts only — verbatim source material belongs in `raw/`, never mixed into the wiki layer.
 - **Don't build folder-of-folders for organization theater.** Flat with good naming beats deep nesting. If you need a folder hierarchy to find something, you have a search problem, not an organization problem.
 - **Don't add `notes/`, `misc/`, `tmp/`, or `inbox/`.** Graveyards. Use `archives/` if it's old, write a real file in the right place if it's new.
 - **Don't pre-create folders you don't need yet.** Empty folders are noise. The AIOS will tell you when it's time.

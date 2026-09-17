@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Opener references a specific detail from RAW_NOTES, not a generic agency description", "passed": true, "evidence": "Quotes the About line and the 22-person/4-team structure."},
+    {"text": "Opener asks exactly one open question and is not a value-prop pitch", "passed": false, "evidence": "Inserts an unverified assertion stated as likely fact before the question ('funny thing is... you're probably doing internally what you promise clients you'll save them from') — reads as a diagnosis/pitch, not pure curiosity."},
+    {"text": "The drafted reasoning identifies pain point #5 (fragmented systems) as the match", "passed": false, "evidence": "No pain-point number or research-grounded taxonomy used at all — reasoning invents its own framing ('handoff/coordination overhead') from the generic value prop in about-business.md, which has no pain-point list to draw from."},
+    {"text": "Opener draws on a single strongest signal rather than combining multiple RAW_NOTES details into one message", "passed": true, "evidence": "Also rejects the generic signals and combines only the About quote + team structure."},
+    {"text": "Register is lowercase/casual, consistent with references/voice.md", "passed": false, "evidence": "Three-sentence paragraph structure with an inserted editorializing line ('funny thing is...') exceeds the short, punchy-line register voice.md's samples use; addresses her by first name up front, which the reference samples don't do."}
+  ],
+  "summary": {"passed": 2, "failed": 3, "total": 5, "pass_rate": 0.4}
+}

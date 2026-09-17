@@ -1,0 +1,7 @@
+{
+  "expectations": [
+    {"text": "Output is SKIP with a one-line reason, not a forced generic opener", "passed": true, "evidence": "Output is 'SKIP — nothing in RAW_NOTES clears the personalization bar.'"},
+    {"text": "The reasoning shows the notes were checked against the signal-pain-point map (or fallback ladder) before skipping, not skipped reflexively", "passed": true, "evidence": "Walks the fallback ladder (trigger event, shared context, role/industry pain point) against each note before concluding SKIP."}
+  ],
+  "summary": {"passed": 2, "failed": 0, "total": 2, "pass_rate": 1.0}
+}

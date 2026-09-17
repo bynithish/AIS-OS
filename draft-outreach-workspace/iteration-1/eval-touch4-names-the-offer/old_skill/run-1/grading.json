@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Names the free discovery call directly as a flat statement",
+      "passed": false,
+      "evidence": "Mentions 'a calendly link for discovery calls' only as a description of a website feature, not as an active offer from Nithish \u2014 never invites them to book with him."
+    },
+    {
+      "text": "Contains no permission-asking phrasing",
+      "passed": true,
+      "evidence": "No explicit permission-asking phrase, though the whole message is structured as another diagnostic question rather than an ask."
+    },
+    {
+      "text": "Does not repeat the fragmented-systems question from LAST_SENT verbatim",
+      "passed": true,
+      "evidence": "Uses a new signal (contact form / no live chat) instead of repeating verbatim \u2014 correctly follows the old skill's only rule, 'pick a different signal.'"
+    },
+    {
+      "text": "Reads as changing the angle (naming the offer) rather than continuing to probe",
+      "passed": false,
+      "evidence": "Structurally identical to a touch-1/2/3 diagnostic opener \u2014 ends in another open question about site mechanics, never converts to naming the offer. This is the exact gap the session's changes were meant to close."
+    }
+  ],
+  "summary": {
+    "pass_rate": 0.5,
+    "passed": 2,
+    "failed": 2,
+    "total": 4
+  }
+}

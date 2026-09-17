@@ -1,0 +1,10 @@
+{
+  "eval_id": 2,
+  "eval_name": "thin-notes-should-not-force-it",
+  "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a cold LinkedIn opener for this lead. Don't touch the Google Sheet or run sheets_client.py — just output the drafted opener text (or SKIP — reason) to a file.\n\nNAME: Sana Okafor\nRAW_NOTES: Runs a small marketing agency, seems to do a bit of everything. LinkedIn photo looks professional. Based in Lagos. No posts in the last year. Site is just a one-pager with an email address, no other detail.\nLAST_SENT: (none — this is the initial DM)",
+  "assertions": [
+    {"text": "Output is SKIP with a one-line reason, not a forced generic opener", "type": "manual"},
+    {"text": "Reason correctly identifies no signal clears the personalization bar", "type": "manual"},
+    {"text": "Does not send a generic line like 'curious how AI fits into your workflow'", "type": "manual"}
+  ]
+}

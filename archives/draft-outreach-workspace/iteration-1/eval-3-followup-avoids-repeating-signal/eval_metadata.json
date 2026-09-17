@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "eval_name": "followup-avoids-repeating-signal",
+  "prompt": "Draft follow-up 1 (day 4) for Marcus Webb, whose LAST_SENT already used the squeeze-play (#1) signal, and whose RAW_NOTES also contains an unused newsletter signal (#5) using the draft-outreach synthesis process.",
+  "assertions": [
+    "Follow-up uses a different signal than LAST_SENT (ideally the newsletter/pain-#5 signal), not a repeat of the squeeze-play question",
+    "Follow-up does not restate or closely paraphrase LAST_SENT's question",
+    "Follow-up reads as a light nudge continuing the thread rather than a fresh cold-open",
+    "Follow-up still ends in one open question, in voice"
+  ]
+}

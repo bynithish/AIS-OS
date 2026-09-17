@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Picks one specific signal, not a combination of several",
+      "passed": true,
+      "evidence": "Uses the 'under one roof' bio quote elaborated with the 22-person/4-team detail as one coherent signal, not multiple unrelated signals stacked."
+    },
+    {
+      "text": "Ends in a question, not a value-prop statement",
+      "passed": true,
+      "evidence": "'is that literally true, or does someone end up stitching it together by hand?'"
+    },
+    {
+      "text": "Contains no permission-asking language",
+      "passed": true,
+      "evidence": "No 'would it be okay', 'curious if', or similar hedges present."
+    },
+    {
+      "text": "Lowercase/casual register, short lines, no corporate phrasing",
+      "passed": false,
+      "evidence": "Opens with capitalized 'Your about page says' \u2014 voice.md calls for lowercase register; this drafts in sentence case."
+    },
+    {
+      "text": "Could not have been sent unedited to 500 other agencies",
+      "passed": true,
+      "evidence": "Quotes her exact bio line and the specific 22-person/4-team detail."
+    }
+  ],
+  "summary": {
+    "pass_rate": 0.8,
+    "passed": 4,
+    "failed": 1,
+    "total": 5
+  }
+}

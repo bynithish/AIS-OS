@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "brand-context": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-context/SKILL.md",
+      "computedHash": "469f811f23c0b8716b9ba6920cb6f62e0778e40071087b4305fcea939296a948"
+    },
+    "brand-messaging": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-messaging/SKILL.md",
+      "computedHash": "86a18bdb61a602fabb1b81f9e0a3e80e4904afaba0f7d3b7f9065a709a5be81c"
+    },
+    "brand-story": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-story/SKILL.md",
+      "computedHash": "900df958c59687f5d7322d4fdabd1906b0b28e9fa1e5791da5cd943081948106"
+    },
+    "brand-voice": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/brand-voice/SKILL.md",
+      "computedHash": "c04b1875dd7c3669834bccc68a0c7523468dd62166d2b3289fc8bc3d6035a656"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "b146008599c31057cef1c145774cea5d5afb30e8f43fa802e47a4b461419aaaf"
+    },
+    "personal-brand": {
+      "source": "arnabbagxd/brand-building-skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal-brand/SKILL.md",
+      "computedHash": "b9c8d535aa3faa02d3ac20b69df6f63bf190687ffce90d5ac0f205230a365a8e"
+    }
+  }
+}

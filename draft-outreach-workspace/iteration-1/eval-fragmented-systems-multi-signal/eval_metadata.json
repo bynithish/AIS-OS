@@ -1,0 +1,12 @@
+{
+  "eval_id": 0,
+  "eval_name": "fragmented-systems-multi-signal",
+  "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a cold LinkedIn opener for this lead. Don't touch the Google Sheet or run sheets_client.py — just output the drafted opener text (or SKIP — reason) to a file.\n\nNAME: Priya Raman\nRAW_NOTES: Runs a 22-person full-service agency in Bangalore — SEO, paid social, content, and web dev all in-house, one team per discipline. LinkedIn About: \"we handle it all under one roof so you don't have to juggle five vendors.\" Site has a contact form and a Calendly booking link for discovery calls; no live chat widget anywhere. No recent LinkedIn posts. Team page lists 22 people, roughly even split across the four service lines.\nLAST_SENT: (none — this is the initial DM)",
+  "assertions": [
+    {"text": "Picks one specific signal, not a combination of several", "type": "manual"},
+    {"text": "Ends in a question, not a value-prop statement", "type": "manual"},
+    {"text": "Contains no permission-asking language (would it be okay, curious if, no worries if not)", "type": "manual"},
+    {"text": "Lowercase/casual register, short lines, no corporate phrasing", "type": "manual"},
+    {"text": "Could not have been sent unedited to 500 other agencies (passes the personalization bar)", "type": "manual"}
+  ]
+}

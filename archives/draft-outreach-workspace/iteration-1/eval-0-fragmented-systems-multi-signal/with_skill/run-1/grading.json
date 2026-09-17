@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Opener references a specific detail from RAW_NOTES, not a generic agency description", "passed": true, "evidence": "Quotes the exact About line and the 22-person/4-discipline team structure verbatim."},
+    {"text": "Opener asks exactly one open question and is not a value-prop pitch", "passed": true, "evidence": "Single closing question ('are those four actually talking to each other... or still stitched together manually'); no assumption stated as fact, no pitch."},
+    {"text": "The drafted reasoning identifies pain point #5 (fragmented systems) as the match", "passed": true, "evidence": "Reasoning explicitly names '#5 — Fragmented AI tool stacks (default/primary tier)' and cites the matching row in signal-pain-point-map.md."},
+    {"text": "Opener draws on a single strongest signal rather than combining multiple RAW_NOTES details into one message", "passed": true, "evidence": "Explicitly rejects contact form/live chat/Calendly as generic, picks the About-quote + team-structure combo as one coherent signal."},
+    {"text": "Register is lowercase/casual, consistent with references/voice.md", "passed": true, "evidence": "Fully lowercase, two short lines, no capitalization."}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

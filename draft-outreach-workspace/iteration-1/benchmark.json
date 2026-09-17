@@ -1,0 +1,452 @@
+{
+  "metadata": {
+    "skill_name": "draft-outreach",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-15T14:09:39Z",
+    "evals_run": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 3,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 43.935,
+        "tokens": 54601,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Uses a different signal than LAST_SENT (newsletter, not retainer/squeeze-play)",
+          "passed": true,
+          "evidence": "Same newsletter signal used."
+        },
+        {
+          "text": "Functions as a stat/observation per touch-2 content type, not a generic check-in",
+          "passed": true,
+          "evidence": "Quotes the newsletter tagline as the observation before asking."
+        },
+        {
+          "text": "Does not contain purely logistical phrasing",
+          "passed": true,
+          "evidence": "No logistical filler present."
+        },
+        {
+          "text": "Ends in one testable/binary question",
+          "passed": true,
+          "evidence": "'is that actually going out on a regular cadence, or sitting dormant behind the signup?'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 50.251,
+        "tokens": 51748,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Picks one specific signal, not a combination of several",
+          "passed": true,
+          "evidence": "Same bio quote, elaborated with named disciplines (SEO/social/content/dev) instead of the team count \u2014 still one coherent signal."
+        },
+        {
+          "text": "Ends in a question, not a value-prop statement",
+          "passed": true,
+          "evidence": "'is work between them flowing automatically, or getting stitched together by hand?'"
+        },
+        {
+          "text": "Contains no permission-asking language",
+          "passed": true,
+          "evidence": "No hedging or permission phrases present."
+        },
+        {
+          "text": "Lowercase/casual register, short lines, no corporate phrasing",
+          "passed": false,
+          "evidence": "Opens with capitalized 'Saw your about section' \u2014 same lowercase miss as the with_skill version, not something this session's edits changed either way."
+        },
+        {
+          "text": "Could not have been sent unedited to 500 other agencies",
+          "passed": true,
+          "evidence": "Quotes her exact bio line and names the four disciplines."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 54.279,
+        "tokens": 52101,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Routes to pain point #3 (ROI proof), not #5 (fragmented systems)",
+          "passed": true,
+          "evidence": "Same case-study-numbers anchor and manual-vs-system question."
+        },
+        {
+          "text": "Anchors on the AI-driven positioning or case-study-numbers signal specifically",
+          "passed": true,
+          "evidence": "'saw your case studies \u2014 3x organic traffic in 90 days, for two clients.'"
+        },
+        {
+          "text": "Ends in one open/binary question, not a pitch",
+          "passed": true,
+          "evidence": "'pulled together manually each time, or is there a live system behind those numbers?'"
+        },
+        {
+          "text": "Contains no permission-asking or hedging language",
+          "passed": true,
+          "evidence": "None present."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 37.946,
+        "tokens": 51164,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output is SKIP with a one-line reason, not a forced generic opener",
+          "passed": true,
+          "evidence": "Starts 'SKIP \u2014 nothing here clears the bar.'"
+        },
+        {
+          "text": "Reason correctly identifies no signal clears the personalization bar",
+          "passed": true,
+          "evidence": "Same reasoning shape \u2014 vague discipline claim, no recent hook, thin site, no shared context."
+        },
+        {
+          "text": "Does not send a generic line like 'curious how AI fits into your workflow'",
+          "passed": true,
+          "evidence": "Pure SKIP, no drafted line."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "total": 4,
+        "time_seconds": 97.494,
+        "tokens": 58560,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Names the free discovery call directly as a flat statement",
+          "passed": false,
+          "evidence": "Mentions 'a calendly link for discovery calls' only as a description of a website feature, not as an active offer from Nithish \u2014 never invites them to book with him."
+        },
+        {
+          "text": "Contains no permission-asking phrasing",
+          "passed": true,
+          "evidence": "No explicit permission-asking phrase, though the whole message is structured as another diagnostic question rather than an ask."
+        },
+        {
+          "text": "Does not repeat the fragmented-systems question from LAST_SENT verbatim",
+          "passed": true,
+          "evidence": "Uses a new signal (contact form / no live chat) instead of repeating verbatim \u2014 correctly follows the old skill's only rule, 'pick a different signal.'"
+        },
+        {
+          "text": "Reads as changing the angle (naming the offer) rather than continuing to probe",
+          "passed": false,
+          "evidence": "Structurally identical to a touch-1/2/3 diagnostic opener \u2014 ends in another open question about site mechanics, never converts to naming the offer. This is the exact gap the session's changes were meant to close."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 46.774,
+        "tokens": 55397,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Uses a different signal than LAST_SENT (newsletter, not retainer/squeeze-play)",
+          "passed": true,
+          "evidence": "Newsletter signal used; LAST_SENT's retainer-pushback question is not repeated."
+        },
+        {
+          "text": "Functions as a stat/observation per touch-2 content type, not a generic check-in",
+          "passed": true,
+          "evidence": "Opens by naming the specific newsletter observation before asking anything."
+        },
+        {
+          "text": "Does not contain purely logistical phrasing",
+          "passed": true,
+          "evidence": "No 'just following up' or equivalent."
+        },
+        {
+          "text": "Ends in one testable/binary question",
+          "passed": true,
+          "evidence": "'is that going out on a regular schedule, or has it slowed down since you launched it?'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 33.65,
+        "tokens": 51845,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Picks one specific signal, not a combination of several",
+          "passed": true,
+          "evidence": "Uses the 'under one roof' bio quote elaborated with the 22-person/4-team detail as one coherent signal, not multiple unrelated signals stacked."
+        },
+        {
+          "text": "Ends in a question, not a value-prop statement",
+          "passed": true,
+          "evidence": "'is that literally true, or does someone end up stitching it together by hand?'"
+        },
+        {
+          "text": "Contains no permission-asking language",
+          "passed": true,
+          "evidence": "No 'would it be okay', 'curious if', or similar hedges present."
+        },
+        {
+          "text": "Lowercase/casual register, short lines, no corporate phrasing",
+          "passed": false,
+          "evidence": "Opens with capitalized 'Your about page says' \u2014 voice.md calls for lowercase register; this drafts in sentence case."
+        },
+        {
+          "text": "Could not have been sent unedited to 500 other agencies",
+          "passed": true,
+          "evidence": "Quotes her exact bio line and the specific 22-person/4-team detail."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 37.315,
+        "tokens": 51688,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Routes to pain point #3 (ROI proof), not #5 (fragmented systems)",
+          "passed": true,
+          "evidence": "Anchors on case-study numbers and asks whether proof is manual or systematized \u2014 the #3 diagnostic, not a fragmentation question."
+        },
+        {
+          "text": "Anchors on the AI-driven positioning or case-study-numbers signal specifically",
+          "passed": true,
+          "evidence": "'saw your case studies \u2014 3x organic traffic in 90 days for two clients, laid out like proper PDFs.'"
+        },
+        {
+          "text": "Ends in one open/binary question, not a pitch",
+          "passed": true,
+          "evidence": "'pulled together manually each time, or is there a live system behind it?'"
+        },
+        {
+          "text": "Contains no permission-asking or hedging language",
+          "passed": true,
+          "evidence": "None present."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 3,
+        "failed": 0,
+        "total": 3,
+        "time_seconds": 47.746,
+        "tokens": 52922,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output is SKIP with a one-line reason, not a forced generic opener",
+          "passed": true,
+          "evidence": "Starts 'SKIP \u2014 raw notes don't clear the personalization bar.'"
+        },
+        {
+          "text": "Reason correctly identifies no signal clears the personalization bar",
+          "passed": true,
+          "evidence": "Walks through each candidate detail (discipline list, photo, posting gap, thin site, location) and explains why each fails to map."
+        },
+        {
+          "text": "Does not send a generic line like 'curious how AI fits into your workflow'",
+          "passed": true,
+          "evidence": "No drafted opener text present at all \u2014 pure SKIP."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 57.403,
+        "tokens": 55815,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Names the free discovery call directly as a flat statement",
+          "passed": true,
+          "evidence": "'i run free 45-min discovery calls. one AI-native audit, find the single highest-roi fix...' \u2014 stated as fact with a booking link, not asked as a question."
+        },
+        {
+          "text": "Contains no permission-asking phrasing",
+          "passed": true,
+          "evidence": "No 'would you be open to' or similar; states the offer directly."
+        },
+        {
+          "text": "Does not repeat the fragmented-systems question from LAST_SENT verbatim",
+          "passed": true,
+          "evidence": "References the four-teams detail but reframes it into the offer rather than re-asking the same question."
+        },
+        {
+          "text": "Reads as changing the angle (naming the offer) rather than continuing to probe",
+          "passed": true,
+          "evidence": "Explicit pivot line: 'still curious... but here's the actual offer instead of another question.'"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "old_skill": {
+      "pass_rate": {
+        "mean": 0.86,
+        "stddev": 0.2191,
+        "min": 0.5,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 56.781,
+        "stddev": 23.5915,
+        "min": 37.946,
+        "max": 97.494
+      },
+      "tokens": {
+        "mean": 53634.8,
+        "stddev": 3049.9404,
+        "min": 51164,
+        "max": 58560
+      }
+    },
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.96,
+        "stddev": 0.0894,
+        "min": 0.8,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 44.5776,
+        "stddev": 9.3743,
+        "min": 33.65,
+        "max": 57.403
+      },
+      "tokens": {
+        "mean": 53533.4,
+        "stddev": 1956.3173,
+        "min": 51688,
+        "max": 55815
+      }
+    },
+    "delta": {
+      "pass_rate": "-0.10",
+      "time_seconds": "+12.2",
+      "tokens": "+101"
+    }
+  },
+  "notes": [
+    "Clearest signal: eval-touch4-names-the-offer shows the real behavior change from today's edit \u2014 with_skill 100% (4/4) vs old_skill 50% (2/4). The old skill's only follow-up rule was 'pick a different signal', so at day 21 it just asked yet another diagnostic question instead of ever naming the offer. The new skill's explicit touch-2-5 content table makes it actually name the discovery call as a flat statement. This is the one eval that specifically exercises the new capability added this session.",
+    "Non-discriminating evals (0, 1, 2): fragmented-systems-multi-signal, roi-proof-signal, and thin-notes-should-not-force-it show near-identical pass rates and near-identical drafted text between old_skill and with_skill. Expected \u2014 these test opener-drafting logic that this session didn't change (the personalization bar and fallback ladder were already solid).",
+    "Methodology caveat on eval 3 (followup-avoids-repeating-signal, touch 2): this baseline is weaker evidence than eval 4's. Only SKILL.md itself was snapshotted before editing \u2014 references/voice.md and references/follow-up-messaging.md were already updated earlier in the same session and were NOT snapshotted, so both old_skill and with_skill agents could read the new follow-up-messaging.md touch-content table via the Inputs pointer either way. Eval 4's old_skill agent was explicitly instructed not to infer structure beyond what the old SKILL.md body says, which is why it shows a real gap and eval 3 doesn't \u2014 eval 3 wasn't given that same constraint.",
+    "Shared miss, unrelated to today's changes: both old_skill and with_skill openers in eval 0 fail the lowercase-register assertion (both open with a capitalized word: 'Your about page...' / 'Saw your about section...'). voice.md calls for lowercase register. Worth a follow-up fix to the personalization-bar section's example phrasing, since it recurs regardless of which skill version is used."
+  ]
+}

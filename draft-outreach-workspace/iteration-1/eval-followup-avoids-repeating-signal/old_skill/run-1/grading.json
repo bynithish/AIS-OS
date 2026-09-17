@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Uses a different signal than LAST_SENT (newsletter, not retainer/squeeze-play)",
+      "passed": true,
+      "evidence": "Same newsletter signal used."
+    },
+    {
+      "text": "Functions as a stat/observation per touch-2 content type, not a generic check-in",
+      "passed": true,
+      "evidence": "Quotes the newsletter tagline as the observation before asking."
+    },
+    {
+      "text": "Does not contain purely logistical phrasing",
+      "passed": true,
+      "evidence": "No logistical filler present."
+    },
+    {
+      "text": "Ends in one testable/binary question",
+      "passed": true,
+      "evidence": "'is that actually going out on a regular cadence, or sitting dormant behind the signup?'"
+    }
+  ],
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

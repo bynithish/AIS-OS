@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Names the free discovery call directly as a flat statement",
+      "passed": true,
+      "evidence": "'i run free 45-min discovery calls. one AI-native audit, find the single highest-roi fix...' \u2014 stated as fact with a booking link, not asked as a question."
+    },
+    {
+      "text": "Contains no permission-asking phrasing",
+      "passed": true,
+      "evidence": "No 'would you be open to' or similar; states the offer directly."
+    },
+    {
+      "text": "Does not repeat the fragmented-systems question from LAST_SENT verbatim",
+      "passed": true,
+      "evidence": "References the four-teams detail but reframes it into the offer rather than re-asking the same question."
+    },
+    {
+      "text": "Reads as changing the angle (naming the offer) rather than continuing to probe",
+      "passed": true,
+      "evidence": "Explicit pivot line: 'still curious... but here's the actual offer instead of another question.'"
+    }
+  ],
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

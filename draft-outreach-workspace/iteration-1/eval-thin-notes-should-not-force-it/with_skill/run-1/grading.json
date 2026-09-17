@@ -1,0 +1,25 @@
+{
+  "expectations": [
+    {
+      "text": "Output is SKIP with a one-line reason, not a forced generic opener",
+      "passed": true,
+      "evidence": "Starts 'SKIP \u2014 raw notes don't clear the personalization bar.'"
+    },
+    {
+      "text": "Reason correctly identifies no signal clears the personalization bar",
+      "passed": true,
+      "evidence": "Walks through each candidate detail (discipline list, photo, posting gap, thin site, location) and explains why each fails to map."
+    },
+    {
+      "text": "Does not send a generic line like 'curious how AI fits into your workflow'",
+      "passed": true,
+      "evidence": "No drafted opener text present at all \u2014 pure SKIP."
+    }
+  ],
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 3,
+    "failed": 0,
+    "total": 3
+  }
+}

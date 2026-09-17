@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Routes to pain point #3 (ROI proof), not #5 (fragmented systems)",
+      "passed": true,
+      "evidence": "Anchors on case-study numbers and asks whether proof is manual or systematized \u2014 the #3 diagnostic, not a fragmentation question."
+    },
+    {
+      "text": "Anchors on the AI-driven positioning or case-study-numbers signal specifically",
+      "passed": true,
+      "evidence": "'saw your case studies \u2014 3x organic traffic in 90 days for two clients, laid out like proper PDFs.'"
+    },
+    {
+      "text": "Ends in one open/binary question, not a pitch",
+      "passed": true,
+      "evidence": "'pulled together manually each time, or is there a live system behind it?'"
+    },
+    {
+      "text": "Contains no permission-asking or hedging language",
+      "passed": true,
+      "evidence": "None present."
+    }
+  ],
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

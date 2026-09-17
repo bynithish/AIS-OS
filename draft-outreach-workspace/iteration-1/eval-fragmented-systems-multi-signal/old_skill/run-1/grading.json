@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Picks one specific signal, not a combination of several",
+      "passed": true,
+      "evidence": "Same bio quote, elaborated with named disciplines (SEO/social/content/dev) instead of the team count \u2014 still one coherent signal."
+    },
+    {
+      "text": "Ends in a question, not a value-prop statement",
+      "passed": true,
+      "evidence": "'is work between them flowing automatically, or getting stitched together by hand?'"
+    },
+    {
+      "text": "Contains no permission-asking language",
+      "passed": true,
+      "evidence": "No hedging or permission phrases present."
+    },
+    {
+      "text": "Lowercase/casual register, short lines, no corporate phrasing",
+      "passed": false,
+      "evidence": "Opens with capitalized 'Saw your about section' \u2014 same lowercase miss as the with_skill version, not something this session's edits changed either way."
+    },
+    {
+      "text": "Could not have been sent unedited to 500 other agencies",
+      "passed": true,
+      "evidence": "Quotes her exact bio line and names the four disciplines."
+    }
+  ],
+  "summary": {
+    "pass_rate": 0.8,
+    "passed": 4,
+    "failed": 1,
+    "total": 5
+  }
+}

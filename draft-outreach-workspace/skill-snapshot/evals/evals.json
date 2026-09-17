@@ -1,0 +1,33 @@
+{
+  "skill_name": "draft-outreach",
+  "evals": [
+    {
+      "id": 0,
+      "name": "fragmented-systems-multi-signal",
+      "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a cold LinkedIn opener for this lead. Don't touch the Google Sheet or run sheets_client.py — just output the drafted opener text (or SKIP — reason) to a file.\n\nNAME: Priya Raman\nRAW_NOTES: Runs a 22-person full-service agency in Bangalore — SEO, paid social, content, and web dev all in-house, one team per discipline. LinkedIn About: \"we handle it all under one roof so you don't have to juggle five vendors.\" Site has a contact form and a Calendly booking link for discovery calls; no live chat widget anywhere. No recent LinkedIn posts. Team page lists 22 people, roughly even split across the four service lines.\nLAST_SENT: (none — this is the initial DM)",
+      "expected_output": "An opener that picks ONE specific signal (most likely the many-disciplines-under-one-roof or contact-form/no-live-chat detail, both pointing to pain #5 fragmented systems), asks one open diagnostic question about it, sounds like Nithish's voice (lowercase, short, curious, no pitch), and doesn't combine multiple signals into one message.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "roi-proof-signal",
+      "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a cold LinkedIn opener for this lead. Don't touch the Google Sheet or run sheets_client.py — just output the drafted opener text (or SKIP — reason) to a file.\n\nNAME: Derek Vance\nRAW_NOTES: Owner of a 12-person agency, About section says \"We've fully integrated Jasper and a proprietary AI content engine into our workflow — AI-driven from strategy to execution.\" Case studies page shows numbers like \"3x organic traffic in 90 days\" for two clients, written up like case study PDFs. No mention of any dashboard or reporting tool. Posted 2 weeks ago: \"AI is the biggest lever in marketing right now and most agencies are sleeping on it.\"\nLAST_SENT: (none — this is the initial DM)",
+      "expected_output": "An opener anchored on the AI-driven positioning or case-study-numbers signal, routing to pain #3 (no ROI proof — is the AI use actually measurable/systematized), asking one open question, in voice. Should NOT default to #5 when #3 is the clearly stronger match here.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "thin-notes-should-not-force-it",
+      "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a cold LinkedIn opener for this lead. Don't touch the Google Sheet or run sheets_client.py — just output the drafted opener text (or SKIP — reason) to a file.\n\nNAME: Sana Okafor\nRAW_NOTES: Runs a small marketing agency, seems to do a bit of everything. LinkedIn photo looks professional. Based in Lagos. No posts in the last year. Site is just a one-pager with an email address, no other detail.\nLAST_SENT: (none — this is the initial DM)",
+      "expected_output": "Recognizes there's no signal here that clears the personalization bar (nothing matches the signal-pain-point map, no trigger event, no shared context) and writes SKIP with a one-line reason — rather than forcing a generic line like 'noticed you run a marketing agency, curious how AI fits into your workflow.'",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "followup-avoids-repeating-signal",
+      "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a follow-up LinkedIn message for this lead — this is follow-up 1 (day 4), they haven't replied yet. Don't touch the Google Sheet or run sheets_client.py — just output the drafted follow-up text to a file.\n\nNAME: Marcus Webb\nRAW_NOTES: Boutique agency, 8 people, works mostly with two large enterprise retail clients he's had for 6+ years. Long LinkedIn tenure, was in enterprise sales/BD for 10 years before starting the agency. Also mentions in About: \"our newsletter breaks down what's actually working in retail media\" — newsletter signup is on the site.\nLAST_SENT: \"Clients pushing back on retainers now that they see AI cutting costs, or not really hitting you yet? Curious how that's playing out for an 8-person shop working with enterprise retail clients.\"\nSTATUS: waiting, TOUCH: 1",
+      "expected_output": "A follow-up that picks a DIFFERENT signal than LAST_SENT used — the newsletter-signup detail (pain #5, dormant system) is available and unused. Should read as a light nudge continuing the thread, not a repeat of the squeeze-play question, and not a restatement of the same opener.",
+      "files": []
+    }
+  ]
+}

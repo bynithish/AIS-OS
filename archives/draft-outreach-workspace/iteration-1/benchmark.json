@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "skill_name": "draft-outreach",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-11T14:15:38Z",
+    "evals_run": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 49.8,
+        "tokens": 44103,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opener references a specific detail from RAW_NOTES, not a generic agency description",
+          "passed": true,
+          "evidence": "Quotes the About line and the 22-person/4-team structure."
+        },
+        {
+          "text": "Opener asks exactly one open question and is not a value-prop pitch",
+          "passed": false,
+          "evidence": "Inserts an unverified assertion stated as likely fact before the question ('funny thing is... you're probably doing internally what you promise clients you'll save them from') \u2014 reads as a diagnosis/pitch, not pure curiosity."
+        },
+        {
+          "text": "The drafted reasoning identifies pain point #5 (fragmented systems) as the match",
+          "passed": false,
+          "evidence": "No pain-point number or research-grounded taxonomy used at all \u2014 reasoning invents its own framing ('handoff/coordination overhead') from the generic value prop in about-business.md, which has no pain-point list to draw from."
+        },
+        {
+          "text": "Opener draws on a single strongest signal rather than combining multiple RAW_NOTES details into one message",
+          "passed": true,
+          "evidence": "Also rejects the generic signals and combines only the About quote + team structure."
+        },
+        {
+          "text": "Register is lowercase/casual, consistent with references/voice.md",
+          "passed": false,
+          "evidence": "Three-sentence paragraph structure with an inserted editorializing line ('funny thing is...') exceeds the short, punchy-line register voice.md's samples use; addresses her by first name up front, which the reference samples don't do."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "total": 4,
+        "time_seconds": 79.7,
+        "tokens": 46517,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opener references the AI-tool-positioning or case-study-numbers signal, not a generic team-size detail",
+          "passed": true,
+          "evidence": "Anchors on both the AI-driven claim and the case-study stats."
+        },
+        {
+          "text": "The drafted reasoning identifies pain point #3 (no ROI proof) as the match, not #5",
+          "passed": false,
+          "evidence": "No pain-point number used; reasoning references 'Atrily's core value prop' generically without naming a specific researched pain point."
+        },
+        {
+          "text": "Opener ends in an open question rather than a pitch statement",
+          "passed": true,
+          "evidence": "Ends in 'Is that the one piece that hasn't gone AI-native yet, or is there something behind the scenes I'm just not seeing?'"
+        },
+        {
+          "text": "Register is lowercase/casual, consistent with references/voice.md",
+          "passed": false,
+          "evidence": "Capitalized sentence-case throughout ('Your about page says...', 'Then I check the case studies...'), three separate sentences/paragraphs \u2014 more formal than voice.md's lowercase, short-line samples."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 42.9,
+        "tokens": 44041,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output is SKIP with a one-line reason, not a forced generic opener",
+          "passed": true,
+          "evidence": "Output is 'SKIP \u2014 nothing in RAW_NOTES clears the personalization bar.'"
+        },
+        {
+          "text": "The reasoning shows the notes were checked against the signal-pain-point map (or fallback ladder) before skipping, not skipped reflexively",
+          "passed": true,
+          "evidence": "Walks the fallback ladder (trigger event, shared context, role/industry pain point) against each note before concluding SKIP."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 48.8,
+        "tokens": 46712,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Follow-up uses a different signal than LAST_SENT (ideally the newsletter/pain-#5 signal), not a repeat of the squeeze-play question",
+          "passed": true,
+          "evidence": "Picks the newsletter signal, noting the opener already used the enterprise-client angle."
+        },
+        {
+          "text": "Follow-up does not restate or closely paraphrase LAST_SENT's question",
+          "passed": true,
+          "evidence": "New question is about the newsletter, distinct from the retainer question already sent."
+        },
+        {
+          "text": "Follow-up reads as a light nudge continuing the thread rather than a fresh cold-open",
+          "passed": true,
+          "evidence": "Opens with 'Following up on this, no pressure either way.'"
+        },
+        {
+          "text": "Follow-up still ends in one open question, in voice",
+          "passed": false,
+          "evidence": "Capitalized sentence-case ('Following up on this, no pressure either way.' / 'Noticed your newsletter...') rather than voice.md's lowercase register; the closing either/or question also asserts an assumption ('gets squeezed whenever client work picks up') as likely fact rather than staying purely observational."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 36.5,
+        "tokens": 47783,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opener references a specific detail from RAW_NOTES, not a generic agency description",
+          "passed": true,
+          "evidence": "Quotes the exact About line and the 22-person/4-discipline team structure verbatim."
+        },
+        {
+          "text": "Opener asks exactly one open question and is not a value-prop pitch",
+          "passed": true,
+          "evidence": "Single closing question ('are those four actually talking to each other... or still stitched together manually'); no assumption stated as fact, no pitch."
+        },
+        {
+          "text": "The drafted reasoning identifies pain point #5 (fragmented systems) as the match",
+          "passed": true,
+          "evidence": "Reasoning explicitly names '#5 \u2014 Fragmented AI tool stacks (default/primary tier)' and cites the matching row in signal-pain-point-map.md."
+        },
+        {
+          "text": "Opener draws on a single strongest signal rather than combining multiple RAW_NOTES details into one message",
+          "passed": true,
+          "evidence": "Explicitly rejects contact form/live chat/Calendly as generic, picks the About-quote + team-structure combo as one coherent signal."
+        },
+        {
+          "text": "Register is lowercase/casual, consistent with references/voice.md",
+          "passed": true,
+          "evidence": "Fully lowercase, two short lines, no capitalization."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 43.4,
+        "tokens": 48386,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opener references the AI-tool-positioning or case-study-numbers signal, not a generic team-size detail",
+          "passed": true,
+          "evidence": "Anchors on the exact case-study stat ('3x organic traffic in 90 days, for two different clients')."
+        },
+        {
+          "text": "The drafted reasoning identifies pain point #3 (no ROI proof) as the match, not #5",
+          "passed": true,
+          "evidence": "Reasoning explicitly states 'Pain point matched: #3 \u2014 No one can prove AI ROI (primary tier)' and explains the tiebreak against the other #3-routing signals."
+        },
+        {
+          "text": "Opener ends in an open question rather than a pitch statement",
+          "passed": true,
+          "evidence": "Single closing question, no pitch or assumption stated as fact."
+        },
+        {
+          "text": "Register is lowercase/casual, consistent with references/voice.md",
+          "passed": true,
+          "evidence": "Fully lowercase, single short paragraph."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 38.6,
+        "tokens": 47854,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Output is SKIP with a one-line reason, not a forced generic opener",
+          "passed": true,
+          "evidence": "Output is 'SKIP \u2014 nothing in RAW_NOTES clears the personalization bar...'"
+        },
+        {
+          "text": "The reasoning shows the notes were checked against the signal-pain-point map (or fallback ladder) before skipping, not skipped reflexively",
+          "passed": true,
+          "evidence": "Walks every RAW_NOTES line against specific rows in signal-pain-point-map.md, then the fallback ladder, before concluding SKIP."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 31.9,
+        "tokens": 47082,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Follow-up uses a different signal than LAST_SENT (ideally the newsletter/pain-#5 signal), not a repeat of the squeeze-play question",
+          "passed": true,
+          "evidence": "Picks the newsletter signal (#5), explicitly noting LAST_SENT already used the enterprise-client/#1 framing."
+        },
+        {
+          "text": "Follow-up does not restate or closely paraphrase LAST_SENT's question",
+          "passed": true,
+          "evidence": "New question is entirely about the newsletter, unrelated to the retainer/AI-cost question already sent."
+        },
+        {
+          "text": "Follow-up reads as a light nudge continuing the thread rather than a fresh cold-open",
+          "passed": true,
+          "evidence": "Opens with 'no worries if it wasn't the right week to reply \u2014' before pivoting."
+        },
+        {
+          "text": "Follow-up still ends in one open question, in voice",
+          "passed": true,
+          "evidence": "Single closing question, fully lowercase, matches the map's suggested phrasing closely."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "old_skill": {
+      "pass_rate": {
+        "mean": 0.6625,
+        "stddev": 0.2689,
+        "min": 0.4,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 55.3,
+        "stddev": 16.5491,
+        "min": 42.9,
+        "max": 79.7
+      },
+      "tokens": {
+        "mean": 45343.25,
+        "stddev": 1470.288,
+        "min": 44041,
+        "max": 46712
+      }
+    },
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 37.6,
+        "stddev": 4.7728,
+        "min": 31.9,
+        "max": 43.4
+      },
+      "tokens": {
+        "mean": 47776.25,
+        "stddev": 535.3718,
+        "min": 47082,
+        "max": 48386
+      }
+    },
+    "delta": {
+      "pass_rate": "-0.34",
+      "time_seconds": "+17.7",
+      "tokens": "-2433"
+    }
+  },
+  "notes": []
+}

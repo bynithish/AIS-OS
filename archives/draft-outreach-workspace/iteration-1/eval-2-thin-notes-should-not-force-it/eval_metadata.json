@@ -1,0 +1,9 @@
+{
+  "eval_id": 2,
+  "eval_name": "thin-notes-should-not-force-it",
+  "prompt": "Draft a cold LinkedIn opener for Sana Okafor, whose RAW_NOTES contain no real signal (generic agency, no posts, one-page site) using the draft-outreach synthesis process.",
+  "assertions": [
+    "Output is SKIP with a one-line reason, not a forced generic opener",
+    "The reasoning shows the notes were checked against the signal-pain-point map (or fallback ladder) before skipping, not skipped reflexively without looking"
+  ]
+}

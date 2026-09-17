@@ -1,0 +1,30 @@
+{
+  "expectations": [
+    {
+      "text": "Uses a different signal than LAST_SENT (newsletter, not retainer/squeeze-play)",
+      "passed": true,
+      "evidence": "Newsletter signal used; LAST_SENT's retainer-pushback question is not repeated."
+    },
+    {
+      "text": "Functions as a stat/observation per touch-2 content type, not a generic check-in",
+      "passed": true,
+      "evidence": "Opens by naming the specific newsletter observation before asking anything."
+    },
+    {
+      "text": "Does not contain purely logistical phrasing",
+      "passed": true,
+      "evidence": "No 'just following up' or equivalent."
+    },
+    {
+      "text": "Ends in one testable/binary question",
+      "passed": true,
+      "evidence": "'is that going out on a regular schedule, or has it slowed down since you launched it?'"
+    }
+  ],
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 4,
+    "failed": 0,
+    "total": 4
+  }
+}

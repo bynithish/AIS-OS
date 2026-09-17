@@ -1,0 +1,11 @@
+{
+  "eval_id": 4,
+  "eval_name": "touch4-names-the-offer",
+  "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a follow-up LinkedIn message for this lead — this is follow-up 3 (day 21), they still haven't replied. Don't touch the Google Sheet or run sheets_client.py — just output the drafted follow-up text to a file.\n\nNAME: Priya Raman\nRAW_NOTES: Runs a 22-person full-service agency in Bangalore — SEO, paid social, content, and web dev all in-house, one team per discipline. LinkedIn About: \"we handle it all under one roof so you don't have to juggle five vendors.\" Site has a contact form and a Calendly booking link for discovery calls; no live chat widget anywhere. No recent LinkedIn posts. Team page lists 22 people, roughly even split across the four service lines.\nLAST_SENT: \"following up on that fragmented-systems question from a couple weeks back — still curious how the four teams' tools talk to each other, or don't.\"\nSTATUS: waiting, TOUCH: 3",
+  "assertions": [
+    {"text": "Names the free discovery call directly as a flat statement", "type": "manual"},
+    {"text": "Contains no permission-asking phrasing ('would you be open to', 'would it be okay if')", "type": "manual"},
+    {"text": "Does not repeat the fragmented-systems question from LAST_SENT verbatim", "type": "manual"},
+    {"text": "Reads as changing the angle (naming the offer) rather than continuing to probe", "type": "manual"}
+  ]
+}

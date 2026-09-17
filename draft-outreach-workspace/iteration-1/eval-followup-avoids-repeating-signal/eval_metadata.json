@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "eval_name": "followup-avoids-repeating-signal",
+  "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a follow-up LinkedIn message for this lead — this is follow-up 1 (day 4), they haven't replied yet. Don't touch the Google Sheet or run sheets_client.py — just output the drafted follow-up text to a file.\n\nNAME: Marcus Webb\nRAW_NOTES: Boutique agency, 8 people, works mostly with two large enterprise retail clients he's had for 6+ years. Long LinkedIn tenure, was in enterprise sales/BD for 10 years before starting the agency. Also mentions in About: \"our newsletter breaks down what's actually working in retail media\" — newsletter signup is on the site.\nLAST_SENT: \"Clients pushing back on retainers now that they see AI cutting costs, or not really hitting you yet? Curious how that's playing out for an 8-person shop working with enterprise retail clients.\"\nSTATUS: waiting, TOUCH: 1",
+  "assertions": [
+    {"text": "Uses a different signal than LAST_SENT (newsletter, not retainer/squeeze-play)", "type": "manual"},
+    {"text": "Functions as a stat/observation per touch-2 content type, not a generic check-in", "type": "manual"},
+    {"text": "Does not contain purely logistical phrasing ('just following up', 'just checking in', 'wanted to circle back')", "type": "manual"},
+    {"text": "Ends in one testable/binary question", "type": "manual"}
+  ]
+}

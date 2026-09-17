@@ -1,0 +1,11 @@
+{
+  "eval_id": 1,
+  "eval_name": "roi-proof-signal",
+  "prompt": "Using the draft-outreach skill's synthesis process (read the skill and its references), draft a cold LinkedIn opener for this lead. Don't touch the Google Sheet or run sheets_client.py — just output the drafted opener text (or SKIP — reason) to a file.\n\nNAME: Derek Vance\nRAW_NOTES: Owner of a 12-person agency, About section says \"We've fully integrated Jasper and a proprietary AI content engine into our workflow — AI-driven from strategy to execution.\" Case studies page shows numbers like \"3x organic traffic in 90 days\" for two clients, written up like case study PDFs. No mention of any dashboard or reporting tool. Posted 2 weeks ago: \"AI is the biggest lever in marketing right now and most agencies are sleeping on it.\"\nLAST_SENT: (none — this is the initial DM)",
+  "assertions": [
+    {"text": "Routes to pain point #3 (ROI proof), not #5 (fragmented systems)", "type": "manual"},
+    {"text": "Anchors on the AI-driven positioning or case-study-numbers signal specifically", "type": "manual"},
+    {"text": "Ends in one open/binary question, not a pitch", "type": "manual"},
+    {"text": "Contains no permission-asking or hedging language", "type": "manual"}
+  ]
+}

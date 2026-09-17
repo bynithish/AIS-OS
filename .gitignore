@@ -4,6 +4,13 @@
 *.log
 __pycache__/
 node_modules/
+.venv/
 .claude/settings.local.json
 audits/
 brainstorms/
+raw/
+credentials/
+*-key.json
+*serviceaccount*.json
+*service-account*.json
+.obsidian/

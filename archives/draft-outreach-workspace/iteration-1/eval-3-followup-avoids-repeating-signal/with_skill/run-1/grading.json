@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Follow-up uses a different signal than LAST_SENT (ideally the newsletter/pain-#5 signal), not a repeat of the squeeze-play question", "passed": true, "evidence": "Picks the newsletter signal (#5), explicitly noting LAST_SENT already used the enterprise-client/#1 framing."},
+    {"text": "Follow-up does not restate or closely paraphrase LAST_SENT's question", "passed": true, "evidence": "New question is entirely about the newsletter, unrelated to the retainer/AI-cost question already sent."},
+    {"text": "Follow-up reads as a light nudge continuing the thread rather than a fresh cold-open", "passed": true, "evidence": "Opens with 'no worries if it wasn't the right week to reply —' before pivoting."},
+    {"text": "Follow-up still ends in one open question, in voice", "passed": true, "evidence": "Single closing question, fully lowercase, matches the map's suggested phrasing closely."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

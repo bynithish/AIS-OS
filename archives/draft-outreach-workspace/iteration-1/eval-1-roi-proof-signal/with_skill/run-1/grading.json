@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "Opener references the AI-tool-positioning or case-study-numbers signal, not a generic team-size detail", "passed": true, "evidence": "Anchors on the exact case-study stat ('3x organic traffic in 90 days, for two different clients')."},
+    {"text": "The drafted reasoning identifies pain point #3 (no ROI proof) as the match, not #5", "passed": true, "evidence": "Reasoning explicitly states 'Pain point matched: #3 — No one can prove AI ROI (primary tier)' and explains the tiebreak against the other #3-routing signals."},
+    {"text": "Opener ends in an open question rather than a pitch statement", "passed": true, "evidence": "Single closing question, no pitch or assumption stated as fact."},
+    {"text": "Register is lowercase/casual, consistent with references/voice.md", "passed": true, "evidence": "Fully lowercase, single short paragraph."}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0}
+}

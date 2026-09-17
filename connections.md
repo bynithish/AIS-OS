@@ -4,13 +4,13 @@ Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 an
 
 | # | Domain | Tool | Mechanism | Auth | Last checked |
 |---|---|---|---|---|---|
-| 1 | Revenue / Financials | _filled by /onboard_ | not yet connected | — | — |
-| 2 | Customer interactions | _filled by /onboard_ | not yet connected | — | — |
-| 3 | Calendar | _filled by /onboard_ | not yet connected | — | — |
-| 4 | Communication | _filled by /onboard_ | not yet connected | — | — |
-| 5 | Project / task tracking | _filled by /onboard_ | not yet connected | — | — |
-| 6 | Meeting intelligence | _filled by /onboard_ | not yet connected | — | — |
-| 7 | Knowledge / files | _filled by /onboard_ | not yet connected | — | — |
+| 1 | Revenue / Financials | QuickBooks (payments via Google Pay / Wise / bank transfer) | not yet connected | — | — |
+| 2 | Customer interactions | LinkedIn DMs (cold outreach) → WhatsApp once in talking stage | not yet connected | — | — |
+| 3 | Calendar | Google Calendar (inferred from Gmail) | not yet connected | — | — |
+| 4 | Communication | Gmail (follow-ups, meeting links); WhatsApp with co-founder; Slack planned later | not yet connected | — | — |
+| 5 | Project / task tracking | Google Sheets (outreach tracker) | script (`scripts/sheets_client.py`) | service account (`credentials/aios-sheets-key.json`) | 2026-09-10 |
+| 6 | Meeting intelligence | Fireflies (planned) + local storage (`raw/`) | not yet connected | — | — |
+| 7 | Knowledge / files | Google Sheets (outreach tracker); local storage (`raw/` for meeting notes/transcripts) | script (`scripts/sheets_client.py`) | service account (`credentials/aios-sheets-key.json`) | 2026-09-10 |
 
 **Mechanism options:** `mcp` (MCP server), `script` (Python/Bash hitting an API, in `scripts/`), `export` (CSV/JSON dump pipeline), `key+ref` (`.env` key + `references/{tool}-api.md` guide), `not yet connected`.
 
